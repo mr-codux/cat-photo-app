@@ -207,6 +207,15 @@
   .h-\[250px\] {
     height: 250px;
   }
+  .h-\[400px\] {
+    height: 400px;
+  }
+  .h-\[450px\] {
+    height: 450px;
+  }
+  .h-\[px\] {
+    height: px;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -218,6 +227,9 @@
   }
   .w-\[150px\] {
     width: 150px;
+  }
+  .w-\[400px\] {
+    width: 400px;
   }
   .border-collapse {
     border-collapse: collapse;
