@@ -8,6 +8,10 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -179,8 +183,32 @@
       max-width: 96rem;
     }
   }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
+  }
+  .h-\[100\] {
+    height: 100;
+  }
+  .h-\[100px\] {
+    height: 100px;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .w-150 {
+    width: calc(var(--spacing) * 150);
+  }
+  .w-\[150\] {
+    width: 150;
+  }
+  .w-\[150px\] {
+    width: 150px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -188,9 +216,54 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .rounded-\[5\] {
+    border-radius: 5;
+  }
+  .rounded-\[5px\] {
+    border-radius: 5px;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-white {
+    border-color: var(--color-white);
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+  .text-\[32px\] {
+    font-size: 32px;
+  }
+  .leading-\[130\%\] {
+    --tw-leading: 130%;
+    line-height: 130%;
+  }
+  .leading-\[130\] {
+    --tw-leading: 130;
+    line-height: 130;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
@@ -205,6 +278,14 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -214,6 +295,8 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
