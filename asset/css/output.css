@@ -9,6 +9,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-bold: 700;
@@ -268,6 +270,9 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
   .text-\[32px\] {
     font-size: 32px;
   }
@@ -282,6 +287,12 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
   }
   .text-white {
     color: var(--color-white);
