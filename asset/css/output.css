@@ -227,6 +227,9 @@
   .aspect-\[4\/5\] {
     aspect-ratio: 4/5;
   }
+  .h-\[0px\] {
+    height: 0px;
+  }
   .h-\[220px\] {
     height: 220px;
   }
@@ -306,8 +309,14 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-\[100px\] {
+    padding-inline: 100px;
+  }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
+  }
+  .py-\[50px\] {
+    padding-block: 50px;
   }
   .text-center {
     text-align: center;
@@ -446,6 +455,16 @@
   initial-value: solid;
 }
 @layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-outline-style: solid;
+    }
+  }
+}
+
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
