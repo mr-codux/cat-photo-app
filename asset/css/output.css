@@ -218,6 +218,9 @@
   .h-\[220px\] {
     height: 220px;
   }
+  .h-auto {
+    height: auto;
+  }
   .w-full {
     width: 100%;
   }
@@ -263,6 +266,9 @@
   }
   .bg-\[\#fcc6bb\] {
     background-color: #fcc6bb;
+  }
+  .object-contain {
+    object-fit: contain;
   }
   .object-cover {
     object-fit: cover;
@@ -314,6 +320,9 @@
     }
     .sm\:h-\[300px\] {
       height: 300px;
+    }
+    .sm\:h-auto {
+      height: auto;
     }
     .sm\:w-\[250px\] {
       width: 250px;
