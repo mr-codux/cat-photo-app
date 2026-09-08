@@ -315,6 +315,9 @@
     outline-width: 1px;
   }
   @media (width >= 40rem) {
+    .sm\:mx-auto {
+      margin-inline: auto;
+    }
     .sm\:mb-8 {
       margin-bottom: calc(var(--spacing) * 8);
     }
