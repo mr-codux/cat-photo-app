@@ -258,8 +258,20 @@
   .px-\[20px\] {
     padding-inline: 20px;
   }
+  .px-\[100px\] {
+    padding-inline: 100px;
+  }
+  .py-\[0px\] {
+    padding-block: 0px;
+  }
+  .py-\[20px\] {
+    padding-block: 20px;
+  }
   .py-\[100px\] {
     padding-block: 100px;
+  }
+  .py-\[200px\] {
+    padding-block: 200px;
   }
   .text-\[23px\] {
     font-size: 23px;
