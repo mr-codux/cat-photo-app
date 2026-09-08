@@ -267,11 +267,17 @@
   .py-\[20px\] {
     padding-block: 20px;
   }
+  .py-\[50px\] {
+    padding-block: 50px;
+  }
   .py-\[100px\] {
     padding-block: 100px;
   }
   .py-\[200px\] {
     padding-block: 200px;
+  }
+  .py-\[px\] {
+    padding-block: px;
   }
   .text-\[23px\] {
     font-size: 23px;
