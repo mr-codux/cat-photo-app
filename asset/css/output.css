@@ -211,6 +211,9 @@
   .inline-block {
     display: inline-block;
   }
+  .table {
+    display: table;
+  }
   .h-auto {
     height: auto;
   }
@@ -219,6 +222,12 @@
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -254,8 +263,14 @@
   .bg-\[\#fcc6bb\] {
     background-color: #fcc6bb;
   }
+  .object-contain {
+    object-fit: contain;
+  }
   .object-cover {
     object-fit: cover;
+  }
+  .object-center {
+    object-position: center;
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -288,6 +303,13 @@
   .text-slate-800 {
     color: var(--color-slate-800);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   @media (width >= 40rem) {
     .sm\:mb-8 {
       margin-bottom: calc(var(--spacing) * 8);
@@ -300,6 +322,12 @@
     }
     .sm\:justify-between {
       justify-content: space-between;
+    }
+    .sm\:justify-center {
+      justify-content: center;
+    }
+    .sm\:justify-start {
+      justify-content: flex-start;
     }
     .sm\:gap-4 {
       gap: calc(var(--spacing) * 4);
@@ -323,6 +351,9 @@
     }
   }
   @media (width >= 48rem) {
+    .md\:justify-between {
+      justify-content: space-between;
+    }
     .md\:justify-start {
       justify-content: flex-start;
     }
@@ -360,12 +391,18 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
