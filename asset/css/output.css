@@ -320,6 +320,9 @@
     .sm\:w-\[250px\] {
       width: 250px;
     }
+    .sm\:justify-between {
+      justify-content: space-between;
+    }
     .sm\:justify-center {
       justify-content: center;
     }
